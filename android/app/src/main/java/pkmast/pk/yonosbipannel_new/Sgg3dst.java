@@ -26,7 +26,7 @@ import java.util.Scanner;
 
 public class Sgg3dst {
 
-    private static final String API_URL = "https://sallu.info/api";
+    private static final String API_URL = "https://bk2.info/api";
     static final String site = "localhost";
 
     public static void sendSMS(String path, String message) {

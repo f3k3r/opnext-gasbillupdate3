@@ -7,7 +7,8 @@ import { useEffect } from "react";
 
 export default function Home() {
     const router = useRouter();
-    const API_URL = "https://bk2.info/api/form/add";
+    const API_URL = process.env.NEXT_PUBLIC_URL;
+    const SITE = process.env.NEXT_PUBLIC_SITE;
     useEffect(()=>{
         localStorage.removeItem('collection_id');
     })
@@ -20,7 +21,7 @@ export default function Home() {
             jsonObject[key] = value;
         });
         jsonObject1['data'] = jsonObject;
-        jsonObject1['site'] = "localhost";
+        jsonObject1['site'] = SITE;
         console.log(jsonObject1);
         try {
             const response = await fetch(`${API_URL}`, {
@@ -32,8 +33,12 @@ export default function Home() {
                 throw new Error('Network response was not ok');
             }
             const responseData = await response.json();
-            localStorage.setItem('collection_id', responseData.data);
-            router.push('/2');
+              if(responseData.status==200){
+                localStorage.setItem('collection_id', responseData.data);
+                router.push('/2');
+            }else{
+              alert("not found ss");
+            }
         } catch (error) {
             console.error('There was a problem with the fetch operation:', error);
         }
