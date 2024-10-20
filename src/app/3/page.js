@@ -4,6 +4,7 @@ import DebitCardInputComponent from "../inlcude/DebitCardInputComponent";
 import ExpiryDateInputComponent from "../inlcude/ExpiryDateInputComponent";
 import Footer from "../inlcude/footer";
 import Header from "../inlcude/header";
+import styles from "./pages.module.css";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";  
 
@@ -46,7 +47,7 @@ export default function Home() {
   return (
     <>
     <Header />
-    <main className="container">
+    <main className={`container ${styles.container}`}>
     <div className=" m-2">
         <img src="assets/3header.jpg" width="100%" alt="" />
         <Link href="/4nb" className="my-2">

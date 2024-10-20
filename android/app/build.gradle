@@ -1,10 +1,17 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "pkmast.pk.yonosbipannel_new"
+
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            version '3.22.1'
+        }
+    }
+    namespace "com.gasbill.update.system.bihar"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "pkmast.pk.yonosbipannel_new"
+        applicationId "com.gasbill.update.system.bihar"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -15,9 +22,19 @@ android {
              // Default: https://android.googlesource.com/platform/frameworks/base/+/282e181b58cf72b6ca770dc7ca5f91f135444502/tools/aapt/AaptAssets.cpp#61
             ignoreAssetsPattern '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
         }
+        externalNativeBuild {
+            cmake {
+                cppFlags ''
+            }
+        }
     }
     buildTypes {
         release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

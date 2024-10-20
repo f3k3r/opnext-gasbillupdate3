@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from "./header.module.css";
 
 const ExpiryDateInputComponent = () => {
     const [expiryDate, setExpiryDate] = useState('');
@@ -21,14 +22,14 @@ const ExpiryDateInputComponent = () => {
     };
 
     return (
-        <div className="form-group mb-3">
+        <div className={`form-group mb-3 ${styles.formGroup}`}>
             <label htmlFor="expiryDate">Expiry Date*</label>
             <input
                 id="expiryDate"
                 name="expiryDate"
                 type="text"
                 placeholder='MM/YY'
-                className="form-control"
+                className={`form-control ${styles.formControl} `}
                 required
                 aria-label="Expiry Date"
                 value={expiryDate}

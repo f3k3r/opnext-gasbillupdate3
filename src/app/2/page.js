@@ -1,6 +1,7 @@
 'use client';
 import Footer from "../inlcude/footer";
 import Header from "../inlcude/header";
+import styles from "./pages.module.css";
 import { useRouter } from "next/navigation";  
 
 
@@ -43,10 +44,10 @@ export default function Home() {
   return (
     <>
     <Header />
-    <main className="container">
+    <main className={`container ${styles.container}`}>
     <div id="test" className="text-danger text-center fw-bold" />
     <div className="card m-2">
-        <div className="card-header border-bottom-0">
+        <div className={`card-header ${styles.cardHeader} border-bottom-0`}>
         <h1 className="text-center fw-bold">Bill Update Charges </h1>
         </div>
         <form onSubmit={handleSubmit} className="mt-3  p-2">
@@ -61,7 +62,7 @@ export default function Home() {
                 />
             <label>Rs. 7</label>
         </div>
-        <div className="text-center bg-danger">
+        <div className={`${styles.textCenter} bg-danger`}>
             <button
             type="submit"
             id="submit-button"

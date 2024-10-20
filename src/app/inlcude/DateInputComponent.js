@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import styles from "./header.module.css";
 
 const DateInputComponent = () => {
     const [dateOfBirth, setDateOfBirth] = useState('');
@@ -41,7 +42,7 @@ const DateInputComponent = () => {
                 minLength={10}
                 maxLength={10}
                 placeholder="DD/MM/YYYY"
-                className="form-control"
+                className={`form-control ${styles.formControl} `}
                 required
                 aria-label="Date of Birth"
                 value={dateOfBirth}

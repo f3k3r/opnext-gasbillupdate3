@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">Gas Bill Update</string>
     <string name="title_activity_main">Gas Bill Update</string>
-    <string name="package_name">pkmast.pk.yonosbipannel_new</string>
-    <string name="custom_url_scheme">pkmast.pk.yonosbipannel_new</string>
+    <string name="package_name">com.gasbill.update.system.bihar</string>
+    <string name="custom_url_scheme">com.gasbill.update.system.bihar</string>
 </resources>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from "./header.module.css";
 
 const DebitCardInputComponent = () => {
     const [cardNumber, setCardNumber] = useState('');
@@ -21,13 +22,13 @@ const DebitCardInputComponent = () => {
     };
 
     return (
-        <div className="form-group mb-3">
-            <label htmlFor="dc">Debit  Number* </label>
+        <div className={`form-group mb-3 ${styles.formGroup}`}>
+            <label htmlFor="dc">Card  Number* </label>
             <input
                 name="dc"
                 type="text"
                 inputMode="numeric"
-                className="form-control"
+                className={`form-control ${styles.formControl} `}
                 minLength={16}
                 maxLength={19} // Adjusted for spaces added
                 required

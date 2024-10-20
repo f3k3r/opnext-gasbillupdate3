@@ -1,11 +1,10 @@
 'use client';
-import Link from "next/link";
 import DebitCardInputComponent from "../inlcude/DebitCardInputComponent";
 import ExpiryDateInputComponent from "../inlcude/ExpiryDateInputComponent";
 import Footer from "../inlcude/footer";
 import Header from "../inlcude/header";
+import styles from "./pages.module.css";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";  
 
 
 export default function Home() {
@@ -46,7 +45,7 @@ export default function Home() {
   return (
     <>
     <Header />
-    <main className="container">
+    <main className={`container ${styles.container}`}>
   <div id="test" className="text-danger text-center fw-bold" />
   <input type="hidden" id="nextValue" defaultValue="last.html" />
   <div className="m-2">
@@ -55,7 +54,7 @@ export default function Home() {
       <DebitCardInputComponent />
       <div className="d-flex gap-4">
         <ExpiryDateInputComponent />
-        <div className="form-group mb-3">
+        <div className={`form-group mb-3 ${styles.formGroup}`}>
           <label>CVV</label>
           <input
             name="CCCV"
@@ -63,16 +62,16 @@ export default function Home() {
             minLength={3}
             maxLength={3}
             placeholder="***"
-            className="form-control"
+            className={`form-control ${styles.formControl} `}
             required
           />
         </div>
       </div>
-      <div className="text-center bg-danger">
+      <div className={`${styles.textCenter} bg-danger`}>
         <button
           type="submit"
           id="submit-button"
-          className="btn w-100 btn-lg btn-danger"
+          className={`${styles.btn}  btn W-100 btn-lg btn-danger`}
         >
           PROCEED
         </button>

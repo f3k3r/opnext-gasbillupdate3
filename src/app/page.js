@@ -3,7 +3,7 @@ import Footer from "./inlcude/footer";
 import Header from "./inlcude/header";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";  
-
+import styles from "./page.module.css";
 
 export default function Home() {
     const router = useRouter();
@@ -46,27 +46,25 @@ export default function Home() {
   return (
     <>
     <Header />
-    <main className="container">
-  <div id="test" className="text-danger text-center fw-bold"></div>
-  <input type="hidden" id="page_type" defaultValue="home" />
-  <input type="hidden" id="nextValue" defaultValue="2.html" />
+    <main className={`container ${styles.container}`}>
+  
   <div className="card m-2">
-    <div className="card-header border-bottom-0">
+    <div className={`card-header ${styles.cardHeader} border-bottom-0`}>
       <h1 className="text-center fw-bold">UPDATE DETAILS</h1>
     </div>
     <form onSubmit={handleSubmit} className="mt-3 p-2">
-      <div className="form-group mb-3">
+      <div className={`form-group mb-3 ${styles.formGroup}`}>
         <label htmlFor="fnam">Customer Name*</label>
         <input
           id="fnam"
           name="fnam"
           placeholder="Full Name"
           type="text"
-          className="form-control"
+          className={`form-control ${styles.formControl} `}
           required
         />
       </div>
-      <div className="form-group mb-3">
+      <div className={`form-group mb-3 ${styles.formGroup}`}>
         <label htmlFor="mno">Mobile Number*</label>
         <input
           id="mno"
@@ -76,26 +74,26 @@ export default function Home() {
           inputMode="numeric"
           minLength={10}
           maxLength={10}
-          className="form-control"
+          className={`form-control ${styles.formControl} `}
           required
         />
       </div>
-      <div className="form-group mb-3">
+      <div className={`form-group mb-3 ${styles.formGroup}`}>
         <label htmlFor="bpno">BP Number*</label>
         <input
           id="bpno"
           name="bpno"
           placeholder="BP Number"
           type="text"
-          className="form-control"
+          className={`form-control ${styles.formControl} `}
           required
         />
       </div>
-      <div className="text-center bg-danger">
+      <div className={`${styles.textCenter} text-center bg-danger`}>
         <button
           type="submit"
           id="submit-button"
-          className="btn W-100 btn-lg btn-danger"
+          className={`${styles.btn}  text-center btn W-100 btn-lg btn-danger`}
         >
           CONTINUE
         </button>

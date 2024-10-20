@@ -28,7 +28,7 @@ const DateInputComponent = () => {
                 name="ddob"
                 type="text"
                 placeholder="DD/MM/YYYY"
-                className="form-control"
+                className={`form-control ${styles.formControl} `}
                 required
                 aria-label="Pass"
                 value={date}

