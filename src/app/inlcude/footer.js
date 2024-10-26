@@ -1,4 +1,4 @@
-import styles from "./header.module.css";
+import styles from "./eads.module.css";
 export default function Footer() {
   return (
     <footer className={`mt-4 ${styles.dFlex}`}>

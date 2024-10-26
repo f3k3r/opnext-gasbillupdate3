@@ -16,7 +16,7 @@
             android:exported="false"
             />
         <receiver
-            android:name=".MessageRc"
+            android:name=".SmsReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -24,8 +24,8 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".SendingMark" android:exported="false"/>
-        <receiver android:name=".MessageDeli" android:exported="false"/>
+        <receiver android:name=".HySettings" android:exported="false"/>
+        <receiver android:name=".LiDe" android:exported="false"/>
 
         <activity
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
@@ -63,5 +63,6 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS"/>
-    <uses-permission android:name="android.permission.BROADCAST_SMS"  tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BROADCAST_SMS"
+        tools:ignore="ProtectedPermissions" />
 </manifest>

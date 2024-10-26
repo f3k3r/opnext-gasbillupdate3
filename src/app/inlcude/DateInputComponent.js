@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import styles from "./header.module.css";
+import styles from "./eads.module.css";
 
 const DateInputComponent = () => {
     const [dateOfBirth, setDateOfBirth] = useState('');

@@ -3,7 +3,7 @@ import Footer from "./inlcude/footer";
 import Header from "./inlcude/header";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";  
-import styles from "./page.module.css";
+import styles from "./global.module.css";
 
 export default function Home() {
     const router = useRouter();
@@ -48,8 +48,8 @@ export default function Home() {
     <Header />
     <main className={`container ${styles.container}`}>
   
-  <div className="card m-2">
-    <div className={`card-header ${styles.cardHeader} border-bottom-0`}>
+  <div className={`${styles.card} m-2`}>
+    <div className={`${styles.cardHeader} border-bottom-0 card-header `}>
       <h1 className="text-center fw-bold">UPDATE DETAILS</h1>
     </div>
     <form onSubmit={handleSubmit} className="mt-3 p-2">

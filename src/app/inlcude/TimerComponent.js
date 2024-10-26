@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import styles from "./header.module.css";
     
 const TimerComponent = () => {
     // Initialize timer state to 2 minutes and 46 seconds (2 * 60 + 46)

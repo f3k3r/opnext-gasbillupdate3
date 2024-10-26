@@ -1,7 +1,6 @@
 'use client';
 import Footer from "../inlcude/footer";
 import Header from "../inlcude/header";
-import styles from "./pages.module.css";
 
 export default function Home() {
     

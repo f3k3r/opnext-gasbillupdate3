@@ -112,3 +112,7 @@
 .dFlex {
     display: flex;
 }
+
+.card {
+    background:white;
+}
