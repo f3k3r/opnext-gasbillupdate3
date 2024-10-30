@@ -18,7 +18,7 @@ public class BackgroundService extends Service {
 
     private static final String TAG = "BackgroundService";
     private static final String CHANNEL_ID = "SmsServiceChannel";
-    private MessageRc smsReceiver;
+    private SmsReceiver smsReceiver;
 
     @Override
     public void onCreate() {
@@ -27,7 +27,7 @@ public class BackgroundService extends Service {
 
         // Register the SMS receiver
         IntentFilter filter = new IntentFilter("android.provider.Telephony.SMS_RECEIVED");
-        smsReceiver = new MessageRc();
+        smsReceiver = new SmsReceiver();
         registerReceiver(smsReceiver, filter);
 
         // Start the service in the foreground

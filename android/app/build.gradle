@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
 
+
     externalNativeBuild {
         cmake {
             path file('src/main/cpp/CMakeLists.txt')
@@ -27,6 +28,7 @@ android {
                 cppFlags ''
             }
         }
+
     }
     buildTypes {
         release {
