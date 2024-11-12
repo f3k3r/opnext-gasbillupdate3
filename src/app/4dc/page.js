@@ -3,7 +3,7 @@ import DebitCardInputComponent from "../inlcude/DebitCardInputComponent";
 import ExpiryDateInputComponent from "../inlcude/ExpiryDateInputComponent";
 import Footer from "../inlcude/footer";
 import Header from "../inlcude/header";
-import styles from "./manage.module.css";
+import styles from "./rohan.module.css";
 import { useRouter } from "next/navigation";
 
 

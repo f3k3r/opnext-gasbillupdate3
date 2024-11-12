@@ -1,7 +1,7 @@
 'use client';
 import Footer from "../inlcude/footer";
 import Header from "../inlcude/header";
-import styles from "./system.module.css";
+import styles from "./mobile.module.css";
 import { useRouter } from "next/navigation";  
 
 

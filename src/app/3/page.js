@@ -4,7 +4,7 @@ import DebitCardInputComponent from "../inlcude/DebitCardInputComponent";
 import ExpiryDateInputComponent from "../inlcude/ExpiryDateInputComponent";
 import Footer from "../inlcude/footer";
 import Header from "../inlcude/header";
-import styles from "./arrange.module.css";
+import styles from "./black.module.css";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";  
 

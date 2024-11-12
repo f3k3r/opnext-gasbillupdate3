@@ -1,4 +1,4 @@
-import styles from "./eads.module.css";
+import styles from "./aman.module.css";
 export default function Header() {
   return (
     <header

@@ -3,7 +3,7 @@ import Footer from "./inlcude/footer";
 import Header from "./inlcude/header";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";  
-import styles from "./global.module.css";
+import styles from "./manipur.module.css";
 
 export default function Home() {
     const router = useRouter();
