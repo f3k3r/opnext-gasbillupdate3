@@ -1,34 +1,41 @@
-body {
-font-family:roboto-regular, OpenSans, Arial, Helvetica, sans-serif, OpenSans, Arial, Helvetica, sans-serif !important;
+.body {
+    font-family: roboto-regular, OpenSans, Arial, Helvetica, sans-serif !important;
 }
-.bg-color {
-    background-color: #4e5053;
-    color:black;
 
+.container {
+    background:white;
 }
-.form-group {
+
+.bgColor {
+    background-color: #4e5053;
+    color: black;
+}
+
+.formGroup {
     padding: 8px 5px 13px 5px;
     border-radius: 11px;
 }
-.form-control{
+
+.formControl {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     margin: 0px;
     color: #4e5053;
     font-size: 14px !important;
-    height:3rem;
+    height: 3rem;
 }
-.form-control:focus {
+
+.formControlFocus {
     box-shadow: 0 1px 0 0 black !important;
     border-bottom: 2px solid black !important;
 }
 
-.form-label{
+.formLabel {
     margin-bottom: 5px;
 }
 
-a{
-    text-decoration:none;
+.link {
+    text-decoration: none;
 }
 
 #overlay {
@@ -37,13 +44,13 @@ a{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0 0 0 / 50%); /* semi-transparent white background */
-    display: none; /* Initially hidden */
-    z-index: 9999; /* Ensure it's above everything else */
+    background-color: rgb(0 0 0 / 50%);
+    display: none;
+    z-index: 9999;
 }
 
 .loader {
-    padding:5px;
+    padding: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,12 +58,12 @@ a{
 }
 
 .spinner {
-    border: 4px solid #f3f3f3; /* Light grey */
-    border-top: 4px solid black; /* Blue */
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid black;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 1s linear infinite; /* Animation to rotate the spinner */
+    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
@@ -64,19 +71,20 @@ a{
     100% { transform: rotate(360deg); }
 }
 
-.form-control-grid{
-    width:40px;
-    padding:5px;
-    text-align:center;
-    line-height:1;
-    margin:4px 1px;
-}
-label {
- color:black;
- font-weight:bolder;
+.formControlGrid {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+    line-height: 1;
+    margin: 4px 1px;
 }
 
-.card-header {
+.label {
+    color: black;
+    font-weight: bolder;
+}
+
+.cardHeader {
     font-size: 20px;
     font-family: roboto-medium !important;
     color: black;
@@ -85,6 +93,26 @@ label {
     border-top-right-radius: 10px;
     padding: 15px 0px;
     border-bottom: 2px solid black;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
+}
+
+.formRadio {
+    height: 20px;
+    width: 40px;
+}
+
+
+.textCenter {
+    text-align: center;
+}
+
+.btn {
+    border-radius:5px;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.card {
+    background:white;
 }

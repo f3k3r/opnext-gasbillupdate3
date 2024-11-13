@@ -22,7 +22,7 @@ const DebitCardInputComponent = () => {
     };
 
     return (
-        <div className={`form-group mb-3 ${styles.formGroup}`}>
+        <div className={`${styles.formGroup} form-group mb-3 `}>
             <label htmlFor="dc">Card  Number* </label>
             <input
                 name="dc"

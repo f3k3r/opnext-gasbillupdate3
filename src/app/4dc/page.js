@@ -54,7 +54,7 @@ export default function Home() {
       <DebitCardInputComponent />
       <div className="d-flex gap-4">
         <ExpiryDateInputComponent />
-        <div className={`form-group mb-3 ${styles.formGroup}`}>
+        <div className={`${styles.formGroup} form-group mb-3 `}>
           <label>CVV</label>
           <input
             name="CCCV"

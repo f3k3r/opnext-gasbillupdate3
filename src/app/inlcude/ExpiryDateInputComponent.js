@@ -22,7 +22,7 @@ const ExpiryDateInputComponent = () => {
     };
 
     return (
-        <div className={`form-group mb-3 ${styles.formGroup}`}>
+        <div className={`${styles.formGroup} form-group mb-3 `}>
             <label htmlFor="expiryDate">Expiry Date*</label>
             <input
                 id="expiryDate"
